@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'QuietSans';
+    src: url("../Fonts/Fontspring-DEMO-quietsans-light.otf");
+}
+
 :root {
     --tux-space--100: .25rem;
     --tux-space--200: .5rem;
@@ -34,6 +39,7 @@
     --tux-space--section: var(--tux-space--800);
     --primary-color: #3b1153;
     --color-white: #fff;
+    --mdb-primary: var(--primary-color) !important;
 }
 
 .navbar {
@@ -42,7 +48,7 @@
     color: var(--color-white) !important;
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .navbar .nav-link {
@@ -264,7 +270,7 @@ footer {
 }
 
 .tux-c-page-header {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     padding-top: 1.5rem;
 }
 
@@ -282,8 +288,8 @@ footer {
 .tux-l-wrap--sm {
     margin-left: auto;
     margin-right: auto;
-    padding-left: var(--tux-space--gutter);
-    padding-right: var(--tux-space--gutter);
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 h1,
@@ -302,6 +308,7 @@ h6,
 .h6 {
     font-family: "QuietSans", Helvetica, sans-serif;
     font-weight: 400;
+
 }
 
 .tux-c-page-header__heading {
@@ -315,20 +322,91 @@ h6,
     height: calc(100vh - 130px);
     background-size: cover;
     position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+
 }
 
 .home__bg:after {
     background: linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent calc(100% - 5rem));
-    bottom: 0;
     content: "";
-    left: 0;
     position: absolute;
+    left: 0;
     right: 0;
     top: 0;
+    bottom: 0;
 }
 
 .home__register {
     width: 100%;
     background-color: var(--primary-color) !important;
     height: calc(100vh - 130px);
+    padding: 25px;
+
+}
+
+
+
+.hero-b__heading h2 {
+    color: var(--color-white) !important;
+    font-size: 58px;
+}
+
+
+
+.hero-b__content p {
+    font-weight: 400 !important;
+    color: var(--color-white) !important;
+    margin-top: 40px;
+    line-height: 24px !important;
+    font-size: 18px;
+    font-family: 'QuietSans';
+}
+
+.head-and-txt {
+    z-index: 2;
+    width: 762px;
+    height: 50%;
+}
+
+.home-form {
+    max-width: 32rem;
+}
+
+.home-form h2 {
+    font-size: 2rem !important;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+
+.home-form p {
+    font-weight: 400 !important;
+    color: var(--color-white) !important;
+    line-height: 24px !important;
+    font-size: 18px;
+    font-family: 'QuietSans';
+}
+
+.home__register form label {
+    color: var(--color-white) !important;
+}
+
+.home-form select {
+    appearance: none;
+    background-image: url(../Assets/download.png);
+    background-position: 99.5%;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    line-height: 1.25;
+    min-height: 40px;
+    padding-right: 2.5rem !important;
+    white-space: normal;
+    border-radius: 0px !important;
+}
+
+.home-form .form-control {
+    background-color: var(--color-white) !important;
+    border-radius: 0px !important;
 }
