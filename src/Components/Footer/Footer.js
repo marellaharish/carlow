@@ -13,7 +13,7 @@ function Footer() {
                     <section className='pt-3'>
                         <MDBContainer className='text-center text-md-start mt-5 border-bottom'>
                             <MDBRow className='mt-3'>
-                                <MDBCol md="3" lg="4" xl="3" className=' me-auto mb-4'>
+                                <MDBCol md="3" lg="4" xl="3" className=' me-auto my-auto'>
                                     <img
                                         src={logo}
                                         height='30'
