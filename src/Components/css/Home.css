@@ -39,6 +39,7 @@
     --tux-space--section: var(--tux-space--800);
     --primary-color: #3b1153;
     --color-white: #fff;
+    --color-black: #000000;
     --mdb-primary: var(--primary-color) !important;
 }
 
@@ -411,8 +412,8 @@ h6,
     border-radius: 0px !important;
 }
 
-.form-check-label{
-    color: var(--color-white)!important;
+.form-check-label {
+    color: var(--color-white) !important;
     /* margin-left: 10px !important; */
     display: inline !important;
     font-size: 11px !important;
@@ -425,7 +426,7 @@ h6,
     border: none !important;
 }
 
-.form-check-input{
+.form-check-input {
     width: 1.2rem;
     height: 1.2rem;
 }
@@ -445,22 +446,23 @@ h6,
     background-color: transparent;
 }
 
-.btn{
+.btn {
     box-shadow: none !important;
 }
-.form-footer{
+
+.form-footer {
     font-size: 13px !important;
 }
 
-.btn-lg{
+.btn-lg {
     padding: 20px 30px !important;
 }
 
-.home-form form label{
+.home-form form label {
     letter-spacing: .0625rem !important;
 }
 
-.key-admission-section{
+.key-admission-section {
     background-color: #f5f3f6 !important;
     padding: 4rem 2rem;
 }
@@ -474,21 +476,187 @@ h6,
         width: var(--tux-separator--width, var(--tux-space--700, 3rem));
 } */
 
-.border-top{
-}
-
-tr{
+.AdmissionsDates-Table tr {
     border-top: 2px solid #000 !important;
     border-bottom: 0px solid transparent !important;
 }
 
-.personal-admission{ 
+.personal-admission {
     font-family: "QuietSans", Helvetica, sans-serif;
-        font-weight: 400;
-        color: #000;
-        padding: 0 7rem ;
+    font-weight: 400;
+    color: #000;
+    padding: 0 7rem;
 }
 
-.enrollment-div{
-    width: 500px;
+.personal-admission-txt {
+    font-family: "QuietSans", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding: 0 7rem;
+}
+
+.enrollment-div {
+    width: 60%;
+    color: #000;
+    padding: 4rem 0;
+}
+
+.AdmissionsDates-head {
+    color: #000;
+}
+
+.EnrollmentCounselor {
+    font-weight: 600;
+}
+
+.EnrollmentCounselor::after,
+.personal-admission-txt::after,
+.tab-imageSideContent h3::after,
+.AdmissionsDates-head::after {
+    content: "";
+    background-color: #f1c400;
+    width: 50px;
+    margin-left: 25px;
+    margin-top: 15px;
+    height: 7px;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+
+.has-large-font-size {
+    padding: 15px 0px;
+    font-size: 1.115rem;
+    color: #000;
+}
+
+.has-font-size {
+    font-size: 1rem;
+    color: #000;
+}
+
+p a {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.application-process {
+    background-color: var(--primary-color);
+    padding-bottom: 5rem;
+}
+
+.application-process .enrollment-div,
+.application-process .enrollment-div .has-large-font-size {
+    color: var(--color-white) !important;
+}
+
+.application-process .enrollment-div .has-large-font-size {
+    font-size: 1rem;
+}
+
+.application-process .enrollment-div {
+    padding: 4rem 0 0 0;
+}
+
+.tabs-style-one {
+    border: 5px solid #bbbbbb;
+    background-color: var(--color-white);
+    padding-bottom: 25px !important;
+}
+
+.tabs-style-one .nav-item {
+    margin: 0px !important;
+}
+
+.tabs-style-one .nav-tabs .nav-link.active,
+.tabs-style-one .nav-tabs .nav-item.show .nav-link {
+    color: var(--color-black) !important;
+    font-weight: bold;
+    text-transform: capitalize !important;
+    font-size: 1rem;
+    border-color: var(--primary-color) !important;
+    border-bottom: 5px solid var(--primary-color) !important;
+    background-color: var(--color-white);
+}
+
+
+.tabs-style-one .nav-tabs .nav-link,
+.tabs-style-one .nav-tabs .nav-item.show .nav-link {
+    color: var(--color-black) !important;
+    font-weight: bold;
+    text-transform: capitalize !important;
+    font-size: 1rem;
+    background-color: #e3e3e3;
+    border-bottom: 5px solid transparent !important;
+
+}
+
+.tabs-style-one .nav-tabs .nav-link:hover {
+    background-color: #f1f1f1 !important;
+    border-color: #f1c400 !important;
+}
+
+.tab-image .tabImage-1 {
+    width: 90%;
+    object-fit: cover;
+    padding: 2rem;
+}
+
+.tab-imageSideContent h3 {
+    font-size: 1.725rem !important;
+    color: var(--color-black);
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.tab-imageSideContent p {
+    font-size: 1rem;
+    padding-right: 3rem;
+    color: var(--color-black);
+}
+
+.tab-imageSideContent ul li {
+    padding: 0 10px !important;
+    color: var(--color-black);
+    line-height: 2rem;
+    list-style: disc;
+}
+
+.tab1-data ul li {
+    padding: 0 10px !important;
+    color: var(--color-black);
+    line-height: 1.8rem;
+    list-style: disc;
+}
+
+.tab1-data p {
+    font-size: 1rem;
+    padding-right: 3rem;
+    color: var(--color-black);
+}
+
+.tab1-data {
+    width: 65%;
+}
+
+.inner-2 li {
+    list-style: numeric !important;
+}
+
+a {
+    cursor: pointer !important;
+}
+
+.inner-2 li a {
+    text-decoration: underline !important;
+}
+
+.accordion-button {
+    font-size: 1.15rem !important;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-black);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--color-black);
 }

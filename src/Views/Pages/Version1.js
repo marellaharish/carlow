@@ -2,8 +2,9 @@ import React, { useState } from "react"
 import NavBar from "../../Components/Header/NavBar"
 import Footer from "../../Components/Footer/Footer"
 import { MDBCol, MDBContainer, MDBInput, MDBRow, MDBCheckbox, MDBBtn } from "mdb-react-ui-kit"
-
+import TabStyle1 from "../Component/TabStyle1"
 import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
+import { MDBAccordion, MDBAccordionItem } from 'mdb-react-ui-kit';
 function Version1() {
 
 
@@ -53,7 +54,7 @@ function Version1() {
                 <NavBar />
 
 
-                <MDBContainer fluid>
+                <MDBContainer fluid className="p-0">
 
                     <header className="tux-c-page-header">
                         <div className="tux-c-page-header__wrapper tux-l-wrap--md">
@@ -193,28 +194,30 @@ function Version1() {
                             <MDBRow>
                                 <MDBCol size={7}>
                                     <div className="mx-2">
-                                        <h2 className="fw-bold">Key Admissions Dates</h2>
+                                        <h2 className="fw-bold AdmissionsDates-head">Key Admissions Dates</h2>
                                         <p className="lh-base mt-4 pe-4">There are a few possible dates to keep in mind when you’re applying to Carlow. Make sure you familiarize yourself with the application deadlines and start dates so you’re prepared to apply. Keep in mind that application deadlines are specific to programs.</p>
-                                        <MDBTable>
-                                            <MDBTableBody>
-                                                <tr>
-                                                    <td>Commencement</td>
-                                                    <td>May 6, 2023</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Summer Start Date</td>
-                                                    <td>May 15, 2023</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Spring and Summer 2023 Registration Opens</td>
-                                                    <td>October 31-November 4, 2022</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Spring Start Date</td>
-                                                    <td>January 9, 2023</td>
-                                                </tr>
-                                            </MDBTableBody>
-                                        </MDBTable>
+                                        <div className="AdmissionsDates-Table">
+                                            <MDBTable>
+                                                <MDBTableBody>
+                                                    <tr>
+                                                        <td>Commencement</td>
+                                                        <td>May 6, 2023</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Summer Start Date</td>
+                                                        <td>May 15, 2023</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Spring and Summer 2023 Registration Opens</td>
+                                                        <td>October 31-November 4, 2022</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Spring Start Date</td>
+                                                        <td>January 9, 2023</td>
+                                                    </tr>
+                                                </MDBTableBody>
+                                            </MDBTable>
+                                        </div>
                                     </div>
                                 </MDBCol>
                                 <MDBCol size={5}>
@@ -224,35 +227,87 @@ function Version1() {
                                         </em>
                                     </h3>
 
-                                    <h3 className="personal-admission mt-3">– Online MSW Student</h3>
+                                    <h3 className="personal-admission-txt mt-3">– Online MSW Student</h3>
                                 </MDBCol>
                             </MDBRow>
                         </MDBContainer>
                     </div>
-
-
-
                     <MDBContainer>
                         <div class="enrollment-div">
-
-
-                            <h2 class="wp-block-heading h3">Meet with an Enrollment Counselor</h2>
-
-
-
+                            <h2 class="EnrollmentCounselor">Meet with an Enrollment Counselor</h2>
                             <p class="has-large-font-size">Are you looking to connect with an enrollment counselor directly to answer your questions about our online programs, admissions, applications, or financial aid? Our enrollment team is here to help.</p>
+                            <p className="has-font-size">Complete the form at the top of this page to get started, and if you have any immediate questions please <a href="#">email our enrollment team</a> or call us at 855-511-6450.</p>
+                        </div>
+                    </MDBContainer>
+                    <div className="application-process">
+                        <MDBContainer>
+                            <div class="enrollment-div">
+                                <h2 class="EnrollmentCounselor">Explore the Carlow Application Process</h2>
+                                <p class="has-large-font-size">
+                                    Applying to Carlow University online is simple–get one step closer to developing the knowledge and leadership skills you need to succeed inside and outside of the classroom. The application process can differ slightly depending on what path you’re taking — whether you’re transferring universities, attending college for the first time or are coming from a military background. Regardless of your pathway, take a closer look at the admission requirements so you can get a full picture of what you need to do to apply, and start working toward your degree.
+                                </p>
+                            </div>
+                            <TabStyle1 className="pb-5" />
+                        </MDBContainer>
+                    </div>
+                </MDBContainer>
+                <div className="key-admission-section">
+                    <MDBContainer>
+                        <div class=" ">
+                            <h2 class="EnrollmentCounselor">How to Apply</h2>
 
-
-
-                            <p>Complete the form at the top of this page to get started, and if you have any immediate questions please <a href="mailto:getstarted@carlow.edu">email our enrollment team</a> or call us at 855-511-6450.</p>
-
+                            <MDBRow>
+                                <MDBCol size={6}>
+                                    <MDBAccordion alwaysOpen  >
+                                        <MDBAccordionItem collapseId={1} headerTitle='1. Fill out the online application.'>
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </MDBCol>
+                                <MDBCol size={6}>
+                                    <MDBAccordion alwaysOpen  >
+                                        <MDBAccordionItem collapseId={1} headerTitle='2. Check any program specific-requirements.'>
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </MDBCol>
+                            </MDBRow>
+                            <MDBRow className="mt-4">
+                                <MDBCol>
+                                    <MDBAccordion alwaysOpen initialActive={1}>
+                                        <MDBAccordionItem collapseId={1} headerTitle='3. Request official transcripts.'>
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </MDBCol>
+                                <MDBCol>
+                                    <MDBAccordion alwaysOpen initialActive={1}>
+                                        <MDBAccordionItem collapseId={1} headerTitle="4. Monitor your email. We ll be in touch!">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </MDBCol>
+                            </MDBRow>
 
                         </div>
                     </MDBContainer>
-
-
-
-                </MDBContainer>
+                </div>
 
 
 
