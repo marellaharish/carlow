@@ -57,7 +57,7 @@ function TabStyle1() {
 
 
                                     <MDBCol size={6}>
-                                        <div class="tab-imageSideContent">
+                                        <div className="tab-imageSideContent">
                                             <h3>Transfer Admissions Process</h3>
                                             <p className='pb-3'>Are you considering transferring to a Carlow University online program? There are particular steps you need to take to ensure you get full credit for all the previous coursework you’ve completed. To apply to Carlow online as a transfer student, you need to submit the following documents:</p>
                                             <ul className='ps-3'>
@@ -92,7 +92,7 @@ function TabStyle1() {
 
 
                                     <MDBCol size={6}>
-                                        <div class="tab-imageSideContent">
+                                        <div className="tab-imageSideContent">
                                             <h3>Transfer Admissions Process</h3>
                                             <p className='pb-3'>Carlow is proud to offer generous benefits to service members and veterans. As an active participant in the Yellow Ribbon Program, we abide by the participant standards outlined in the DoD Voluntary Education Memorandum of Understanding.</p>
                                             <p className='pb-3'>Here’s a closer look at the benefits available to active-duty service members and veterans:</p>
@@ -133,7 +133,7 @@ function TabStyle1() {
 
 
                                     <MDBCol size={6}>
-                                        <div class="tab-imageSideContent">
+                                        <div className="tab-imageSideContent">
                                             <h3>International Admissions Process</h3>
                                             <p className='pb-3'>Carlow is a global community. We welcome students from all backgrounds who are looking to shape their future here. The application process for international students is similar to that of other students, but there are some important differences. Here’s a closer look at the requirements for international students:</p>
                                             <ul className='ps-3'>

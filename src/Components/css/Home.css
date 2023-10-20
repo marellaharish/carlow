@@ -308,13 +308,14 @@ h5,
 h6,
 .h6 {
     font-family: "QuietSans", Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 
 }
 
 .tux-c-page-header__heading {
-    font-weight: 500;
+    font-weight: 600;
     color: black;
+    font-size: 2.9rem;
 }
 
 .home__bg {
@@ -464,7 +465,8 @@ h6,
 
 .key-admission-section {
     background-color: #f5f3f6 !important;
-    padding: 4rem 2rem;
+    padding: 3.5rem 2rem;
+
 }
 
 /* .key-head h2{
@@ -507,6 +509,7 @@ h6,
 
 .EnrollmentCounselor {
     font-weight: 600;
+    /* color: var(--color-black); */
 }
 
 .EnrollmentCounselor::after,
@@ -650,13 +653,276 @@ a {
     text-decoration: underline !important;
 }
 
-.accordion-button {
+.four-sectionAccordion .accordion-button {
     font-size: 1.15rem !important;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-black);
 }
 
-.accordion-button:not(.collapsed) {
+.four-sectionAccordion .accordion-button:not(.collapsed) {
     color: var(--color-black);
+}
+
+.four-sectionAccordion .logo-image {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four-sectionAccordion .accordion-header {
+    z-index: 6;
+}
+
+.four-sectionAccordion .accordion-button {
+    padding: 40px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+    position: relative;
+}
+
+.four-sectionAccordion .accordion {
+    position: relative;
+}
+
+.four-sectionAccordion .logo-image i {
+    font-size: 1.2rem;
+    color: var(--color-white);
+}
+
+.four-sectionAccordion .accordion-button::after {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 1rem;
+    content: "";
+    background-image: var(--mdb-accordion-btn-icon);
+    background-size: var(--mdb-accordion-btn-icon-width);
+    transition: var(--mdb-accordion-btn-icon-transition);
+    position: absolute;
+    bottom: 5px;
+    left: 51%;
+    padding: 11px;
+}
+
+.four-sectionAccordion .accordion-item:last-of-type {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.four-sectionAccordion .accordion-item {
+    color: var(--mdb-accordion-color);
+    background-color: var(--mdb-accordion-bg);
+    border: var(--mdb-accordion-border-width) solid var(--mdb-accordion-border-color);
+    border-top: var(--mdb-accordion-border-width) solid var(--mdb-accordion-border-color) !important;
+}
+
+.four-sectionAccordion .accordion-button:not(.collapsed)::after {
+    background-image: var(--mdb-accordion-btn-active-icon);
+    transform: var(--mdb-accordion-btn-icon-transform);
+}
+
+.Addmission-Program .nav-tabs .nav-item .nav-link {
+    padding: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px !important;
+    border-color: transparent !important;
+}
+
+.Addmission-Program .nav-tabs .nav-item .nav-link .logo-image {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Addmission-Program .nav-tabs .nav-item .nav-link .logo-image i {
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.Addmission-Program .nav-tabs .nav-link.active,
+.Addmission-Program .nav-tabs .nav-item.show .nav-link {
+    color: var(--mdb-nav-tabs-link-active-color);
+    border-color: transparent !important;
+    background-color: var(--primary-color) !important;
+    border-radius: 10px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    padding: 35px !important;
+    transition: var(--mdb-accordion-btn-icon-transition);
+}
+
+.Addmission-Program .nav-tabs .nav-item .nav-link h6 {
+    color: var(--color-black);
+    text-transform: capitalize;
+}
+
+.Addmission-Program .nav-tabs .nav-link.active h6 {
+    color: var(--color-white);
+    letter-spacing: .0630rem !important;
+}
+
+.Addmission-Program .nav-tabs .nav-link h6 {
+    letter-spacing: .0630rem !important;
+}
+
+/* .Addmission-Program .nav-tabs .nav-link.active::after {
+    content: "";
+    background-color: #f1c400;
+    width: 50px;
+    margin-left: 25px;
+    margin-top: 15px;
+    height: 7px;
+    display: block;
+    transform: translate(-50%, -50%);
+} */
+
+.Addmission-Program .nav-tabs .nav-link.active::after {
+    background-color: #f1c400;
+    bottom: calc(var(--tux-space--700)*-1);
+    content: "";
+    height: var(--tux-space--300);
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: var(--mdb-accordion-btn-icon-transition);
+}
+
+.tab1__panels {
+    padding: 4rem 0;
+}
+
+.highlight {
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.tab1__panels ul li {
+    margin-bottom: 0.25rem !important;
+    color: var(--primary-color) !important;
+}
+
+.tab1__panels ul li a {
+    color: var(--primary-color) !important;
+    text-decoration: underline;
+}
+
+.EnrollmentCounselor2::after {
+    content: "";
+    background-color: #f1c400;
+    width: 50px;
+    margin-top: 15px;
+    height: 7px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(0px, -50%);
+}
+
+
+.Questions_Accordion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px !important;
+}
+
+.Questions_Accordion .accordion {
+    width: 50%;
+    border-radius: 0px !important;
+}
+
+.Questions_Accordion .accordion .accordion-item {
+    border-radius: 0px !important;
+    background-color: var(--primary-color);
+}
+
+.Questions_Accordion .accordion .accordion-item .accordion-button {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+.Questions_Accordion .accordion-button::before {
+    flex-shrink: 0;
+    width: var(--mdb-accordion-btn-icon-width);
+    height: var(--mdb-accordion-btn-icon-width);
+    margin-right: 10px;
+    content: "";
+    background-image: var(--mdb-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--mdb-accordion-btn-icon-width);
+    transition: var(--mdb-accordion-btn-icon-transition);
+    color: var(--color-white);
+    transform: rotate(-90deg);
+}
+
+.Questions_Accordion .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: none !important;
+    border-top-right-radius: none !important;
+    text-align: left !important;
+    font-size: 1.125rem;
+    line-height: 1.55;
+    font-weight: 500;
+    padding: 1rem !important;
+}
+
+.Questions_Accordion .accordion-button:not(.collapsed)::before {
+    background-image: var(--mdb-accordion-btn-active-icon);
+    transform: rotate(0deg);
+}
+
+.Questions_Accordion .accordion-button:not(.collapsed)::after,
+.Questions_Accordion .accordion-button::after {
+    background-image: none !important;
+}
+
+.Questions_Accordion .accordion-button:not(.collapsed) {
+    color: var(--mdb-accordion-active-color);
+    background-color: var(--mdb-accordion-active-bg);
+    box-shadow: none !important;
+}
+
+.Questions_Accordion .accordion-body {
+    color: var(--color-white);
+    padding-top: 0px !important;
+}
+
+
+.enrollment-div2 {
+    width: 60%;
+    color: #000;
+    padding: 4rem 0 0 0;
+}
+
+.feedback-buttons {
+    margin-top: 1rem;
+}
+
+.feedback-buttons button {
+    border-radius: 0px !important;
+    background-color: #ffffff74 !important;
+}
+
+.feedback-buttons button:hover {
+    border-radius: 0px !important;
+    background-color: #ffffff94 !important;
 }

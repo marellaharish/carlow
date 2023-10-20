@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Home.css";
-import logo from "../Assets/logo.png"
+import logo from "../Assets/carlow-logo-footer.png"
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 function Footer() {
     return (
@@ -13,16 +13,13 @@ function Footer() {
                     <section className='pt-3'>
                         <MDBContainer className='text-center text-md-start mt-5 border-bottom'>
                             <MDBRow className='mt-3'>
-                                <MDBCol md="3" lg="4" xl="3" className=' me-auto my-auto'>
+                                <MDBCol md="3" lg="4" xl="3" className=' me-auto mt-2'>
                                     <img
                                         src={logo}
-                                        height='30'
+                                        height='80'
                                         alt=''
                                         loading='lazy'
                                     />
-                                    <p className="text-warning ms-2 mt-3">
-                                        Devoted to The Future of You
-                                    </p>
                                 </MDBCol>
 
 

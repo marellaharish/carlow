@@ -17,7 +17,7 @@ import {
     MDBCollapse,
     MDBInputGroup,
 } from 'mdb-react-ui-kit';
-import logo from "../Assets/logo.png"
+import logo from "../Assets/CARLOW-UNIVERSITY-logo_white.png"
 
 function NavBar() {
     const [showNavRight, setShowNavRight] = useState(false);
@@ -31,7 +31,7 @@ function NavBar() {
                         <MDBNavbarBrand href='#'>
                             <img
                                 src={logo}
-                                height='30'
+                                height='40'
                                 alt=''
                                 loading='lazy'
                             />
