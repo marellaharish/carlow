@@ -73,7 +73,7 @@ function Footer() {
 
 
 
-                    <div className='container py-4 d-flex align-items-center justify-content-between'>
+                    <div className='container py-4 d-flex align-items-center justify-content-between socialandtext'>
                         <ul className="tux-c-pipe-list">
                             <li className=" menu-item menu-item-type-custom menu-item-object-custom menu-item-214">
                                 <a target="_blank">Privacy Policy <span className="u-sr-only">opens in a new window</span></a>

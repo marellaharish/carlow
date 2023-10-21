@@ -69,8 +69,8 @@ function Version1() {
                         </div>
                     </header>
 
-                    <MDBRow>
-                        <MDBCol size={7} className="p-0">
+                    <MDBRow className="main-content">
+                        <MDBCol size="12" md="7" sm="12">
                             <div className="home__bg">
                                 <div className="head-and-txt">
 
@@ -87,8 +87,11 @@ function Version1() {
 
                                 </div>
                             </div>
+                            <div className="hero-b__content2">
+                                <p>We’re excited you’ve considered Carlow University as the next step on your educational journey, and we’re here to help. Whether you’re a first-year, transfer or military-affiliated student, the application process is streamlined so you’ll be on your way to earning a degree in no time. Explore the admissions hub to make sure you have all the required information you need to get started.</p>
+                            </div>
                         </MDBCol>
-                        <MDBCol size={5} className="p-0">
+                        <MDBCol size="12" md="5" sm="12" className="p-0">
                             <div className="home__register">
                                 <div className="home-form">
                                     <h2>Learn More Today</h2>
@@ -103,7 +106,7 @@ function Version1() {
                                             <option>a</option>
                                         </select>
                                         <MDBRow className="mt-3">
-                                            <MDBCol>
+                                            <MDBCol size="12" md="6" sm="12" >
                                                 <label>
                                                     FIRST NAME
                                                 </label>
@@ -120,7 +123,7 @@ function Version1() {
 
 
                                             </MDBCol>
-                                            <MDBCol>
+                                            <MDBCol size="12" md="6" sm="12" className="margin1rm">
                                                 <label>
                                                     LAST NAME
                                                 </label>
@@ -144,7 +147,7 @@ function Version1() {
                                         {value2 && name2 === "" && <p className="m-0 mt-1">This field is required</p>}
 
                                         <MDBRow className="mt-3">
-                                            <MDBCol>
+                                            <MDBCol size="12" md="6" sm="12">
                                                 <label>
                                                     PHONE
                                                 </label>
@@ -161,7 +164,7 @@ function Version1() {
 
 
                                             </MDBCol>
-                                            <MDBCol>
+                                            <MDBCol size="12" md="6" sm="12" className="margin1rm">
                                                 <label>
                                                     ZIP CODE
                                                 </label>
@@ -196,7 +199,7 @@ function Version1() {
                     <div className="key-admission-section">
                         <MDBContainer>
                             <MDBRow>
-                                <MDBCol size={7}>
+                                <MDBCol size="12" md="7" sm="12" className="p-0">
                                     <div className="mx-2">
                                         <h2 className="fw-bold AdmissionsDates-head">Key Admissions Dates</h2>
                                         <p className="lh-base mt-4 pe-4">There are a few possible dates to keep in mind when you’re applying to Carlow. Make sure you familiarize yourself with the application deadlines and start dates so you’re prepared to apply. Keep in mind that application deadlines are specific to programs.</p>
@@ -224,7 +227,7 @@ function Version1() {
                                         </div>
                                     </div>
                                 </MDBCol>
-                                <MDBCol size={5}>
+                                <MDBCol size="12" md="5" sm="12" className="p-0">
                                     <h3 className="personal-admission">
                                         <em>
                                             “I had a personal admissions team member to answer any of my questions through texts, calls, and emails.<strong>I actually ended up enrolling a semester sooner than I expected because it was so quick and easy.</strong> I am so grateful for that jump start on my degree.”
@@ -261,7 +264,7 @@ function Version1() {
                             <h2 className="EnrollmentCounselor">How to Apply</h2>
 
                             <MDBRow>
-                                <MDBCol size={6}>
+                                <MDBCol size={6} >
                                     <MDBAccordion alwaysOpen  >
                                         <div className="accordion-header logo-image"><MDBIcon fas icon="file-signature" className="ms-2" /></div>
                                         <MDBAccordionItem collapseId={1} headerTitle='1. Fill out the online application.'>
@@ -280,7 +283,7 @@ function Version1() {
                             </MDBRow>
                             <MDBRow className="mt-4">
                                 <MDBCol>
-                                    <MDBAccordion alwaysOpen initialActive={1}>
+                                    <MDBAccordion alwaysOpen>
                                         <div className="accordion-header logo-image"><MDBIcon far icon="user-circle" /></div>
                                         <MDBAccordionItem collapseId={1} headerTitle='3. Request official transcripts.'>
                                             All online applications require proof of transcripts. so you will need to request your official transcripts from the institutions you have attended.
@@ -288,7 +291,7 @@ function Version1() {
                                     </MDBAccordion>
                                 </MDBCol>
                                 <MDBCol>
-                                    <MDBAccordion alwaysOpen initialActive={1}>
+                                    <MDBAccordion alwaysOpen>
                                         <div className="accordion-header logo-image"><MDBIcon far icon="envelope" /></div>
                                         <MDBAccordionItem collapseId={1} headerTitle="4. Monitor your email. We ll be in touch!">
                                             Check for updates and news about your application.

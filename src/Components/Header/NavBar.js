@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../css/Home.css";
+import "../css/Responsive.css";
 import {
     MDBContainer,
     MDBNavbar,
@@ -37,17 +38,21 @@ function NavBar() {
                             />
                         </MDBNavbarBrand>
 
+                        <div>
+                            <MDBIcon fas icon="search" className='me-2' />
+                            <MDBNavbarToggler
+                                type='button'
+                                data-target='#navbarRightAlignExample'
+                                aria-controls='navbarRightAlignExample'
+                                aria-expanded='false'
+                                aria-label='Toggle navigation'
+                                onClick={() => setShowNavRight(!showNavRight)}
+                            >
+                                <MDBIcon icon='bars' fas />
+                            </MDBNavbarToggler>
+                        </div>
 
-                        <MDBNavbarToggler
-                            type='button'
-                            data-target='#navbarRightAlignExample'
-                            aria-controls='navbarRightAlignExample'
-                            aria-expanded='false'
-                            aria-label='Toggle navigation'
-                            onClick={() => setShowNavRight(!showNavRight)}
-                        >
-                            <MDBIcon icon='bars' fas />
-                        </MDBNavbarToggler>
+
 
                         <MDBCollapse navbar show={showNavRight}>
                             <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>

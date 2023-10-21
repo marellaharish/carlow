@@ -131,7 +131,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
 }
@@ -307,7 +307,7 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: "QuietSans", Helvetica, sans-serif;
+    font-family: "QuietSans";
     font-weight: 600;
 
 }
@@ -328,7 +328,6 @@ h6,
     align-items: end;
     justify-content: end;
     flex-direction: column;
-
 }
 
 .home__bg:after {
@@ -349,7 +348,9 @@ h6,
 
 }
 
-
+.main-content.row>* {
+    padding-right: 0px !important;
+}
 
 .hero-b__heading h2 {
     color: var(--color-white) !important;
@@ -365,6 +366,10 @@ h6,
     line-height: 24px !important;
     font-size: 18px;
     font-family: 'QuietSans';
+}
+
+.hero-b__content2 {
+    display: none;
 }
 
 .head-and-txt {
@@ -484,14 +489,14 @@ h6,
 }
 
 .personal-admission {
-    font-family: "QuietSans", Helvetica, sans-serif;
+    /* font-family: "QuietSans", Helvetica, sans-serif; */
     font-weight: 400;
     color: #000;
     padding: 0 7rem;
 }
 
 .personal-admission-txt {
-    font-family: "QuietSans", Helvetica, sans-serif;
+    /* font-family: "QuietSans", Helvetica, sans-serif; */
     font-weight: 400;
     color: #000;
     padding: 0 7rem;
@@ -835,7 +840,7 @@ a {
     display: block;
     position: absolute;
     left: 50%;
-    transform: translate(0px, -50%);
+    transform: translate(-50%, 0px);
 }
 
 
