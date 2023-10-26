@@ -1,0 +1,226 @@
+.filterb-panel{
+    display: flex;
+    font-family: 'Merriweather Sans';
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid #d9d4d4;
+    border-top: 1px solid #d9d4d4
+}
+
+.filterb-field{
+    padding: 10px 0px;
+    margin-top: 5px;
+    text-align: center;
+    color: #003055;
+    cursor: pointer;
+    margin-right: 20px;
+    width: 120px;
+}
+.filterb-field-text{
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    flex :0.8;
+    display: flex;
+    padding: 2px;
+    min-width: 175px;
+    margin: 10px 0px;
+}
+.filterb-field-text input{
+    border: none !important;
+    width : 100%;
+}
+
+.checkgroup{
+    width:300px;
+    padding: 10px 0px;
+    margin-top: 5px;
+    text-align: left;
+    color: #003055;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+.checkbox-bcls{
+    margin-right: 15px;
+}
+
+
+.filterb-label{
+    width :90px;
+    padding: 10px 0px;
+    margin-top: 5px;
+    text-align: left;
+    color: #003055;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.bmodal-filter{
+    padding: 10px 30px 40px 30px;
+    background: #efefef;
+    display: block;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+}
+.bmdodal-item{
+    padding: 5px;
+    width: 150px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #003055;
+    font-family: 'Oswald';
+    border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.fb-fieldcontainer{
+    padding-bottom: 10px;
+}
+
+.bfilter-selected{
+    display: inline-block;
+    padding-right: 10px;
+    color: #e9bb46;
+}
+
+.select-pl,
+.select-fos{
+    border-bottom: 1px solid #e9bb46;
+}
+
+.fb-label{
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.fb-inline{
+    display: inline-block;
+    color: #003055;
+}
+
+.bmdodal-item .fb-inline{
+    width: 120px;
+}
+
+.fbselected-view{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.fb-selected-item{
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    margin: 5px 15px;
+    cursor: pointer;
+    background: #d9d9d9;
+}
+.fb-item-close{
+    display: inline-block;
+    padding: 0px 5px;
+    color: #9E9E9E;
+}
+.fb-applyall{
+    padding: 5px 0px;
+    width: 100px;
+    margin-top: 10px;
+    text-align: right;
+    color: #003055;
+    cursor: pointer;
+    margin-right: 20px;
+    height: 25px;
+}
+.mfb-clearall{
+    padding: 5px 0px;
+    width: 100px;
+    margin-top: 10px;
+    text-align: right;
+    color: #003055;
+    cursor: pointer;
+    margin-right: 20px;
+    height: 25px;
+}
+
+.mfb-applyall{
+    height: 25px;
+    max-width: 100px;
+    padding: 5px 10px;
+    flex :1;
+    margin-top: 10px;
+    text-align: center;
+    color: #003055;
+    cursor: pointer;
+    margin-right: 20px;
+    /** test **/
+    background: #21a2f5;
+    border: 1px solid #21a2f5;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.fb-clearall{
+    height: 25px;
+    max-width: 100px;
+    padding: 5px 10px;
+    flex :1;
+    margin-top: 10px;
+    text-align: center;
+    color: #003055;
+    cursor: pointer;
+    margin-right: 20px;
+    /** test **/
+    background: #21a2f5;
+    border: 1px solid #21a2f5;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.fb-selected-label{
+    padding-right: 5px;
+}
+
+.bmultiselectt-close{
+    width: 70px;
+    float: right;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.btn-cnt{
+    display: flex;
+    float: right;
+    flex:1;
+}
+
+.btn-cnt2{
+    height: 30px;
+    border-bottom: 1px solid #e5e2e2;
+}
+
+.btn-cnt2{
+    display: none !important;
+}
+
+@media only screen and (max-width: 500px){
+    .inline-header{
+        display: flex;
+    }
+    .btn-cnt2{
+        display: block !important;
+    }
+    .btn-cnt{ 
+        display: none !important;
+    }
+    .fb-clearall,.fb-applyall, .mfb-clearall,.mfb-applyall{
+        margin-top: 0px !important;
+        padding: 0px !important;
+        /** temp **/
+        padding: 0px 10px !important;
+    }
+}

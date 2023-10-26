@@ -1,0 +1,44 @@
+.center-align{
+    text-align: center;
+    font-size: 12px;
+    line-height: 15.08px;
+    font-weight: 300;
+}
+.title-flex-display, .view-flex-display{
+    display: flex;
+}
+
+.body-cls{
+    background-color : #e5e5e5;
+    height: 100%;
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+}
+
+.inline-header{
+    color: #063459;
+    font-weight: 400;
+    font-family: "Oswald" !important;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.homepage{
+    max-width: 80%;
+    margin: auto;
+    background-color: #fff;
+    height: auto;
+}
+
+.dsp-flex{
+    display: flex;
+    padding: 20px;
+}
+
+.dsp-options{
+    padding-left: 20px;
+}
+.hm-label{
+    width: 200px;
+}

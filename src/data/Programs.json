@@ -1,0 +1,44 @@
+[
+    {
+        "programId" : 120,
+        "programName": "Early Childhood Education",
+        "featured": true,
+        "programLevel":"ASSOCIATE",
+        "fieldOfStudy": "EDUCATION",
+        "modality": "Online",
+        "creditHrs" : 72,
+        "programTypes": [
+            "Bachelor's",
+            "Business"
+        ],
+        "programDesc": "Designed for busy adult students who want to advance their careers in early childhood education, this CAEP-accredited program meets the standards of the Child."
+    },
+    {
+        "programId" : 121,
+        "programName": "General Studies",
+        "featured": true,
+        "programLevel":"ASSOCIATE",
+        "fieldOfStudy": "GENERAL STUDIES",
+        "modality": "Online",
+        "creditHrs" : 60,
+        "programTypes": [
+            "Bachelor's",
+            "Business"
+        ],
+        "programDesc": "This associate degree includes credits from various academic disciplines to provide students with a foundation for critically examining the world from unique perspectives."
+    },
+    {
+        "programId" : 122,
+        "programName": "General Studies",
+        "featured": true,
+        "programLevel":"BACHELOR’S",
+        "fieldOfStudy": "BUSINESS",
+        "modality": "Online",
+        "creditHrs" : 120,
+        "programTypes": [
+            "Bachelor's",
+            "Business"
+        ],
+        "programDesc": "The business administration degree program provides a foundation of study in management, teamwork, communication, project management, finance, accounting, "
+    }
+]

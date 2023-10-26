@@ -1,0 +1,40 @@
+[
+    {
+        "name" : "Business",
+        "value" : 1
+    },{
+        "name" : "Communication",
+        "value" : 1
+    },{
+        "name" : "Criminal Justice",
+        "value" : 1
+    },{
+        "name" : "Education",
+        "value" : 1
+    },{
+        "name" : "Exercise Science & Allied Health",
+        "value" : 1
+    },{
+        "name" : "General Studies",
+        "value" : 1
+    },{
+        "name" : "Human Services",
+        "value" : 1
+    },
+    {
+        "name" : "Information Technology",
+        "value" : 1
+    },
+    {
+        "name" : "Nursing & Health Care",
+        "value" : 1
+    },
+    {
+        "name" : "Public Health",
+        "value" : 1
+    },
+    {
+        "name" : "Social Science",
+        "value" : 1
+    }
+]

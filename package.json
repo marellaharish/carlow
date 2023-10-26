@@ -1,14 +1,34 @@
 {
-  "name": "mdb-react-template",
-  "version": "6.3.0",
-  "description": "template for mdb-react-ui-kit",
+  "name": "my-programs",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "mdb-react-ui-kit": "6.3.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-router-dom": "^6.17.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/inter": "^5.0.3",
+    "@fontsource/merriweather-sans": "^5.0.3",
+    "@fontsource/oswald": "^5.0.3",
+    "@fontsource/public-sans": "^5.0.3",
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@material/button": "^14.0.0",
+    "@mui/material": "^5.13.4",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "mdb-react-ui-kit": "^6.3.0",
+    "react": "^18.2.0",
+    "react-currency-input-field": "^3.6.11",
+    "react-dom": "^18.2.0",
+    "react-numeric-input": "^2.2.3",
+    "react-page": "^2.5.5",
+    "react-paginate": "^8.2.0",
+    "react-router-dom": "^6.13.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.4",
+    "react-tooltip": "^5.21.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -17,12 +37,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "keywords": [
-    "template",
-    "react"
-  ],
-  "author": "MDBootstrap",
-  "license": "MIT",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",

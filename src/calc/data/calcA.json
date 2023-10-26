@@ -1,0 +1,164 @@
+[
+    {
+        "label": "Bachelor's",
+        "options": [
+            {
+                "label": "Criminology, BA",
+                "value": "{\"recId\": 22,\"requiredCredits\": 120,\"fees\": 750,\"tuition\": \"59,400\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+            },
+            {
+                "label": "Psychology, BA",
+                "value": "{\"recId\": 23,\"requiredCredits\": 120,\"fees\": 750,\"tuition\": \"59,400\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+            },
+            {
+                "label": "Accounting, BS",
+                "value": "{\"recId\": 24,\"requiredCredits\": 120,\"fees\": 750,\"tuition\": \"59,400\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+                
+            },
+            {
+                "label": "Business Management, BS",
+                "value": "{\"recId\": 25,\"requiredCredits\": 120,\"fees\": 1920,\"tuition\": \"59,400\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+                
+            },
+            {
+                "label": "Healthcare Data Analytics, BS",
+                "value": "{\"recId\": 26,\"requiredCredits\": 120,\"fees\": 1920,\"tuition\": \"59,400\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+            },
+            {
+                "label": "Healthcare Management, BS",
+                "value": "{\"recId\": 27,\"requiredCredits\": 120,\"fees\": 1920,\"tuition\": \"59,400\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+                
+            },
+            {
+                "label": "Respiratory Therapy, BS",
+                "value": "{\"recId\": 28,\"requiredCredits\": 27,\"fees\": 1920,\"tuition\": \"13,365\",\"maxCredits\": \"9\", \"costPerCredit\": \"495\" }"
+                
+            },
+            {
+                "label": "Social Work, BSW",
+                "value": "{\"recId\": 30,\"requiredCredits\": 120,\"fees\": 1920,\"tuition\": \"59,400\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+                
+            },
+            {
+                "label": "Social Work, BSW: Crisis and Trauma Concentration Specialization",
+                "value": "{\"recId\": 31,\"requiredCredits\": 117,\"fees\": 750,\"tuition\": \"57,915\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+                
+            },
+            {
+                "label": "Social Work, BSW: Healthcare Concentration Specialization",
+                "value": "{\"recId\": 32,\"requiredCredits\": 120,\"fees\": 750,\"tuition\": \"59,400\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+                
+            },
+            {
+                "label": "Social Work, BSW: Restorative Justice Concentration Specialization",
+                "value": "{\"recId\": 33,\"requiredCredits\": 120,\"fees\": 750,\"tuition\": \"0\",\"maxCredits\": \"90\", \"costPerCredit\": \"495\" }"
+               
+            },
+            {
+                "label": "RN-BSN",
+                "value": "{\"recId\": 34,\"requiredCredits\": 30,\"fees\": 1920,\"tuition\": \"14,850\",\"maxCredits\": \"9\", \"costPerCredit\": \"495\" }"
+                
+            }
+        ]
+    },
+    {
+        "label": "Master's",
+        "options": [
+            {
+                "label": "Executive MBA",
+                "value": "{\"recId\": 1,\"requiredCredits\": 30,\"fees\": 480,\"tuition\": \"20,250\",\"maxCredits\": \"30\", \"costPerCredit\": \"675\" }"
+                
+            },
+            {
+                "label": "MBA",
+                "value": "{\"recId\": 2,\"requiredCredits\": 36,\"fees\": 576,\"tuition\": \"24,300\",\"maxCredits\": \"6\", \"costPerCredit\": \"675\" }"
+            },
+            {
+                "label": "MBA: Fraud and Forensics Specialization",
+                "value": "{\"recId\": 3,\"requiredCredits\": 36,\"fees\": 576,\"tuition\": \"24,300\",\"maxCredits\": \"6\", \"costPerCredit\": \"675\" }"
+            },
+            {
+                "label": "MBA: Healthcare Management Specialization",
+                "value": "{\"recId\": 4,\"requiredCredits\": 36,\"fees\": 576,\"tuition\": \"24,300\",\"maxCredits\": \"6\", \"costPerCredit\": \"675\" }"
+            },
+            {
+                "label": "MBA: Human Resources Management Specialization",
+                "value": "{\"recId\": 5,\"requiredCredits\": 36,\"fees\": 576,\"tuition\": \"24,300\",\"maxCredits\": \"6\", \"costPerCredit\": \"675\" }"
+            },
+            {
+                "label": "MBA: Leadership and Management Specialization",
+                "value": "{\"recId\": 6,\"requiredCredits\": 36,\"fees\": 576,\"tuition\": \"24,300\",\"maxCredits\": \"6\", \"costPerCredit\": \"675\" }"
+            },
+            {
+                "label": "MBA: Project Management Specialization",
+                "value": "{\"recId\": 7,\"requiredCredits\": 36,\"fees\": 576,\"tuition\": \"24,300\",\"maxCredits\": \"6\", \"costPerCredit\": \"675\" }"
+            },
+            {
+                "label": "Fraud & Forensics, MS",
+                "value": "{\"recId\": 9,\"requiredCredits\": 30,\"fees\": 750,\"tuition\": \"24,000\",\"maxCredits\": \"6\", \"costPerCredit\": \"800\" }"
+                
+            },
+            {
+                "label": "MSN-MBA",
+                "value": "{\"recId\": 10,\"requiredCredits\": 60,\"fees\": 960,\"tuition\": \"40,500\",\"maxCredits\": \"12\", \"costPerCredit\": \"675\" }"
+                
+            },
+            {
+                "label": "Education and Leadership, MSN",
+                "value": "{\"recId\": 11,\"requiredCredits\": 33,\"fees\": 610,\"tuition\": \"26,796\",\"maxCredits\": \"6\", \"costPerCredit\": \"812\" }"
+                
+            },
+            {
+                "label": "MSW",
+                "value": "{\"recId\": 12,\"requiredCredits\": 60,\"fees\": 1500,\"tuition\": \"39,000\",\"maxCredits\": \"12\", \"costPerCredit\": \"650\" }"
+            },
+            {
+                "label": "MSW: Direct Practice Specialization",
+                "value": "{\"recId\": 13,\"requiredCredits\": 60,\"fees\": 1500,\"tuition\": \"39,000\",\"maxCredits\": \"12\", \"costPerCredit\": \"650\" }"
+                
+            },
+            {
+                "label": "MSW: Macro Practice Specialization",
+                "value": "{\"recId\": 14,\"requiredCredits\": 60,\"fees\": 1500,\"tuition\": \"39,000\",\"maxCredits\": \"12\", \"costPerCredit\": \"650\" }"
+            },
+            {
+                "label": "MSW-MBA",
+                "value": "{\"recId\": 15,\"requiredCredits\": 72,\"fees\": 1152,\"tuition\": \"48,600\",\"maxCredits\": \"6\", \"costPerCredit\": \"675\" }"
+            },
+            {
+                "label": "Psychology,MA",
+                "value": "{\"recId\": 16,\"requiredCredits\": 36,\"fees\": 750,\"tuition\": \"30,852\",\"maxCredits\": \"9\", \"costPerCredit\": \"857\" }"
+            },
+            {
+                "label": "Family Nurse Practitioner, MSN",
+                "value": "{\"recId\": 17,\"requiredCredits\": 49,\"fees\": 1225,\"tuition\": \"44,982\",\"maxCredits\": \"9\", \"costPerCredit\": \"918\" }"
+            },
+            {
+                "label": "Women\"s Health Nurse Practitioner, MSN",
+                "value": "{\"recId\": 18,\"requiredCredits\": 49,\"fees\": 1225,\"tuition\": \"44,982\",\"maxCredits\": \"9\", \"costPerCredit\": \"918\" }"
+            }
+        ]
+    },
+    {
+        "label": "Doctorate",
+        "options": [
+            {
+                "label": "Nursing Practice, DNP",
+                "value": "{\"recId\": 19,\"requiredCredits\": 34,\"fees\": 960,\"tuition\": \"32,300\",\"maxCredits\": \"6\", \"costPerCredit\": \"950\" }"
+            }
+        ]
+    },
+    {
+        "label": "Certificate",
+        "options": [
+            {
+                "label": "Family Nurse Practitioner (FNP) Certificate",
+                "value": "{\"recId\": 20,\"requiredCredits\": 35,\"fees\": 1225,\"tuition\": \"32,130\",\"maxCredits\": \"9\", \"costPerCredit\": \"918\" }"
+            },
+            {
+                "label": "Women\"s Health Nurse Practitioner (WHNP) Certificate",
+                "value": "{\"recId\": 21,\"requiredCredits\": 18,\"fees\": 1225,\"tuition\": \"16,524\",\"maxCredits\": \"9\", \"costPerCredit\": \"918\" }"
+            }
+        ]
+    }
+]

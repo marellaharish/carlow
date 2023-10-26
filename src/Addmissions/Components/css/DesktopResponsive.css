@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+    .versions{
+        display: none;
+    }
+    .version-Mobile{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,16 @@
+[{
+    "name" : "Associate",
+    "value" :  1
+},{
+    "name" : "Bachelor’s",
+    "value" :  2
+},{
+    "name" : "Master’s",
+    "value" :  3
+},{
+    "name" : "Doctorate",
+    "value" :  4
+},{
+    "name" : "Certificate",
+    "value" :  5
+}]

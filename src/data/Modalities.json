@@ -1,0 +1,10 @@
+[{
+    "name" : "Online",
+    "value" :  1
+},{
+    "name" : "On-Campus",
+    "value" :  2
+},{
+    "name" : "Hybrid",
+    "value" :  3
+}]
