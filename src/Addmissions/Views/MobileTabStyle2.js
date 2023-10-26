@@ -15,7 +15,7 @@ import image3 from "../Components/Assets/tab3-image.jpg"
 import AR from "../Components/Assets/AR.svg"
 import cloud from "../Components/Assets/Cloud.svg"
 import Group from "../Components/Assets/Group.svg"
-function MobileTabStyle1() {
+function MobileTabStyle2() {
     const [justifyActive, setJustifyActive] = useState('tab1');
 
     const handleJustifyClick = (value) => {
@@ -28,9 +28,10 @@ function MobileTabStyle1() {
     return (
         <React.Fragment>
             <>
-                <div className="tabs-style-one">
+                <div className="tabs-style-two">
                     <MDBAccordion borderless>
                         <MDBAccordionItem collapseId={1} headerTitle={<><img src={AR} className='me-2 tab-title-icons' /> Transfer Students</>}>
+                            <div className='border-primary-color'></div>
                             <div className='mobileTab1-content'>
                                 <div className='tabdiv-content'>
                                     <div className='tab-image'>
@@ -61,6 +62,7 @@ function MobileTabStyle1() {
                             </div>
                         </MDBAccordionItem>
                         <MDBAccordionItem collapseId={2} headerTitle={<><img src={Group} className='me-2 tab-title-icons' /> Military Affiliated Students</>}>
+                            <div className='border-primary-color'></div>
                             <div className='mobileTab1-content'>
                                 <div className='tabdiv-content'>
                                     <div className='tab-image'>
@@ -93,6 +95,7 @@ function MobileTabStyle1() {
                             </div>
                         </MDBAccordionItem>
                         <MDBAccordionItem collapseId={3} headerTitle={<><img src={cloud} className='me-2 tab-title-icons' /> International Admissions Process</>}>
+                            <div className='border-primary-color'></div>
                             <div className='mobileTab1-content'>
                                 <div className='tabdiv-content'>
                                     <div className='tab-image'>
@@ -122,4 +125,4 @@ function MobileTabStyle1() {
         </React.Fragment >
     )
 }
-export default MobileTabStyle1
+export default MobileTabStyle2

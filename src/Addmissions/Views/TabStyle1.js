@@ -98,7 +98,7 @@ function TabStyle1() {
 
                                     <MDBCol size={6}>
                                         <div className="tab-imageSideContent">
-                                            <h3>Transfer Admissions Process</h3>
+                                            <h3>Military Admissions Process</h3>
                                             <p className='pb-3'>Carlow is proud to offer generous benefits to service members and veterans. As an active participant in the Yellow Ribbon Program, we abide by the participant standards outlined in the DoD Voluntary Education Memorandum of Understanding.</p>
                                             <p className='pb-3'>Here’s a closer look at the benefits available to active-duty service members and veterans:</p>
                                             <p><strong>Using Military Tuition Assistance Benefits</strong></p>

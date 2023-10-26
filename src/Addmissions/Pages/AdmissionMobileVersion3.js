@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import "../Components/css/Home.css"
+import "../Components/css/Responsive.css"
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
 import { MDBCol, MDBContainer, MDBInput, MDBRow, MDBCheckbox, MDBBtn } from "mdb-react-ui-kit"
-import TabStyle4 from '../Views/TabStyle4';
+import MobileTabStyle3 from '../Views/MobileTabStyle3';
 import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import { MDBAccordion, MDBAccordionItem, MDBIcon } from 'mdb-react-ui-kit';
 import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from 'mdb-react-ui-kit';
-function AdmissionVersion4() {
+function AdmissionMobileVersion3() {
 
 
     const [name, setName] = useState("");
@@ -57,9 +58,9 @@ function AdmissionVersion4() {
         <>
             <React.Fragment>
                 <>
-                    <div className='versions'>
-                        <Header />
+                    <div className='mobileVersion'>
 
+                        <Header />
 
                         <MDBContainer fluid className="p-0">
 
@@ -127,7 +128,7 @@ function AdmissionVersion4() {
 
                                                     </MDBCol>
                                                     <MDBCol size="12" md="6" sm="12" className="margin1rm">
-                                                        <label>
+                                                        <label className='margin1rm'>
                                                             LAST NAME
                                                         </label>
                                                         <input type="text" className="form-control mt-2" placeholder="Last Name" onChange={(e) => {
@@ -168,7 +169,7 @@ function AdmissionVersion4() {
 
                                                     </MDBCol>
                                                     <MDBCol size="12" md="6" sm="12" className="margin1rm">
-                                                        <label>
+                                                        <label className='margin1rm'>
                                                             ZIP CODE
                                                         </label>
                                                         <input type="text" className="form-control mt-2" placeholder="Last Name" onChange={(e) => {
@@ -249,7 +250,7 @@ function AdmissionVersion4() {
                                     <p className="has-font-size">Complete the form at the top of this page to get started, and if you have any immediate questions please <a href="#">email our enrollment team</a> or call us at 855-511-6450.</p>
                                 </div>
                             </MDBContainer>
-                            <div className="application-process">
+                            <div className="">
                                 <MDBContainer>
                                     <div className="enrollment-div">
                                         <h2 className="EnrollmentCounselor">Explore the Carlow Application Process</h2>
@@ -257,53 +258,46 @@ function AdmissionVersion4() {
                                             Applying to Carlow University online is simple–get one step closer to developing the knowledge and leadership skills you need to succeed inside and outside of the classroom. The application process can differ slightly depending on what path you’re taking — whether you’re transferring universities, attending college for the first time or are coming from a military background. Regardless of your pathway, take a closer look at the admission requirements so you can get a full picture of what you need to do to apply, and start working toward your degree.
                                         </p>
                                     </div>
-                                    <TabStyle4 className="pb-5" />
+                                    <MobileTabStyle3 className="pb-5" />
                                 </MDBContainer>
                             </div>
                         </MDBContainer>
-                        <div className="key-admission-section">
+                        <div className="application-process p-1">
                             <MDBContainer>
                                 <div className="four-sectionAccordion">
-                                    <h2 className="EnrollmentCounselor">How to Apply</h2>
+                                    <h2 className="EnrollmentCounselor white">How to Apply</h2>
 
-                                    <MDBRow>
-                                        <MDBCol size={6} >
-                                            <MDBAccordion alwaysOpen  >
-                                                <div className="accordion-header logo-image"><MDBIcon fas icon="file-signature" className="ms-2" /></div>
-                                                <MDBAccordionItem collapseId={1} headerTitle='1. Fill out the online application.'>
-                                                    <a href="#">Create an account in the Carlow online system</a> and complete the form.
-                                                </MDBAccordionItem>
-                                            </MDBAccordion>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <MDBAccordion alwaysOpen  >
-                                                <div className="accordion-header logo-image"><MDBIcon fas icon="bars" /></div>
-                                                <MDBAccordionItem collapseId={1} headerTitle='2. Check any program specific-requirements.'>
-                                                    Your program might require additional materials. Make sure you review the program page and call 855-511-6450 if you have any questions.
-                                                </MDBAccordionItem>
-                                            </MDBAccordion>
-                                        </MDBCol>
-                                    </MDBRow>
-                                    <MDBRow className="mt-4">
-                                        <MDBCol>
-                                            <MDBAccordion alwaysOpen>
-                                                <div className="accordion-header logo-image"><MDBIcon far icon="user-circle" /></div>
-                                                <MDBAccordionItem collapseId={1} headerTitle='3. Request official transcripts.'>
-                                                    All online applications require proof of transcripts. so you will need to request your official transcripts from the institutions you have attended.
-                                                </MDBAccordionItem>
-                                            </MDBAccordion>
-                                        </MDBCol>
-                                        <MDBCol>
-                                            <MDBAccordion alwaysOpen>
-                                                <div className="accordion-header logo-image"><MDBIcon far icon="envelope" /></div>
-                                                <MDBAccordionItem collapseId={1} headerTitle="4. Monitor your email. We ll be in touch!">
-                                                    Check for updates and news about your application.
-                                                </MDBAccordionItem>
-                                            </MDBAccordion>
-                                        </MDBCol>
-                                    </MDBRow>
+
+                                    <MDBAccordion alwaysOpen  >
+                                        <div className="accordion-header logo-image"><MDBIcon fas icon="file-signature" className="ms-2" /></div>
+                                        <MDBAccordionItem collapseId={1} headerTitle='1. Fill out the online application.'>
+                                            <a href="#">Create an account in the Carlow online system</a> and complete the form.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+
+                                    <MDBAccordion alwaysOpen  >
+                                        <div className="accordion-header logo-image"><MDBIcon fas icon="bars" /></div>
+                                        <MDBAccordionItem collapseId={1} headerTitle='2. Check any program specific-requirements.'>
+                                            Your program might require additional materials. Make sure you review the program page and call 855-511-6450 if you have any questions.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+
+                                    <MDBAccordion alwaysOpen>
+                                        <div className="accordion-header logo-image"><MDBIcon far icon="user-circle" /></div>
+                                        <MDBAccordionItem collapseId={1} headerTitle='3. Request official transcripts.'>
+                                            All online applications require proof of transcripts. so you will need to request your official transcripts from the institutions you have attended.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+
+                                    <MDBAccordion alwaysOpen>
+                                        <div className="accordion-header logo-image"><MDBIcon far icon="envelope" /></div>
+                                        <MDBAccordionItem collapseId={1} headerTitle="4. Monitor your email. We ll be in touch!">
+                                            Check for updates and news about your application.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+
                                 </div>
-                                <div className="d-flex mt-5">
+                                <div className="d-flex pb-3">
                                     <MDBBtn className="m-auto" size="lg">START YOUR APPLICATION</MDBBtn>
                                 </div>
                             </MDBContainer>
@@ -320,7 +314,7 @@ function AdmissionVersion4() {
                         <div className="key-admission-section">
                             <MDBContainer>
                                 <div className="Addmission-Program">
-                                    <MDBTabs fill className='mb-3'>
+                                    <MDBTabs fill>
                                         <MDBTabsItem>
                                             <MDBTabsLink onClick={() => handleFillClick('tab1')} active={fillActive === 'tab1'}>
                                                 <div className="logo-image"><MDBIcon far icon="user-circle" /></div>
@@ -415,141 +409,137 @@ function AdmissionVersion4() {
                             </MDBTabsContent>
                         </MDBContainer>
 
-
-                        <MDBContainer >
-                            <div className="d-flex justify-content-center ">
-                                <div className="enrollment-div2 text-center">
-                                    <h2 className="EnrollmentCounselor2">Frequently Asked Questions</h2>
-                                    <p className="has-large-font-size mt-4">Explore our frequently asked questions for in-depth answers. If you don’t find what you’re looking for, <a href="#"> reach out to us. </a></p>
+                        <div className='freequentl-askedQ'>
+                            <MDBContainer >
+                                <div className="d-flex justify-content-center ">
+                                    <div className="enrollment-div2 text-center">
+                                        <h2 className="EnrollmentCounselor2">Frequently Asked Questions</h2>
+                                        <p className="has-large-font-size mt-4">Explore our frequently asked questions for in-depth answers. If you don’t find what you’re looking for, <a href="#"> reach out to us. </a></p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div className="Questions_Accordion mt-0">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='Do you accept transfer credits?'>
-                                        Yes. Carlow has a generous transfer credit policy. Guidelines differ based on your program of choice. Request more information today.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion mt-0">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='Do you accept transfer credits?'>
+                                            Yes. Carlow has a generous transfer credit policy. Guidelines differ based on your program of choice. Request more information today.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='Do you provide credits for work experience?'>
-                                        All of our programs have transfer credit policies and some offer advanced standing options. Explore your <a href="#"> program of interest</a> or <a href="#"> reach out</a> for specific information.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='Do you provide credits for work experience?'>
+                                            All of our programs have transfer credit policies and some offer advanced standing options. Explore your <a href="#"> program of interest</a> or <a href="#"> reach out</a> for specific information.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='How do I apply?'>
-                                        All programs require an <a href="#"> online application.</a> From there, the process depends on your program of interest.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='How do I apply?'>
+                                            All programs require an <a href="#"> online application.</a> From there, the process depends on your program of interest.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='If I am not accepted, what are my options?'>
-                                        The <a href="#"> Mercy principles </a>we employ on campus extend to our admissions process. If you have special circumstances, reach out to us to find out what your options are at 855-511-6450.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='If I am not accepted, what are my options?'>
+                                            The <a href="#"> Mercy principles </a>we employ on campus extend to our admissions process. If you have special circumstances, reach out to us to find out what your options are at 855-511-6450.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='What is the admissions process like?'>
-                                        The admissions process varies based on your program of choice, and we strive to help you through the entire process with one-on-one attention. Find out more about <a> applying to Carlow.</a>
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='What is the admissions process like?'>
+                                            The admissions process varies based on your program of choice, and we strive to help you through the entire process with one-on-one attention. Find out more about <a> applying to Carlow.</a>
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='What is the first step in the application process?'>
-                                        Each program requires an <a href="#"> online application.</a> Find out more about <a> applying to Carlow.</a>
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='What is the first step in the application process?'>
+                                            Each program requires an <a href="#"> online application.</a> Find out more about <a> applying to Carlow.</a>
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='What resources does the school provide for students with disabilities?'>
-                                        If you are considering attending Carlow University and have unique needs, we are ready to help. Some examples of accommodations we offer include enlarged print, audio textbooks, extended testing time and more. Please <a href="#"> contact us </a>with your specific needs.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='What resources does the school provide for students with disabilities?'>
+                                            If you are considering attending Carlow University and have unique needs, we are ready to help. Some examples of accommodations we offer include enlarged print, audio textbooks, extended testing time and more. Please <a href="#"> contact us </a>with your specific needs.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='Who can I speak with about specific admissions questions?'>
-                                        Fill out our <a href="#" >online form</a>, and a representative will contact you as soon as possible to answer your questions. You can also call us at 855-511-6450.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='Who can I speak with about specific admissions questions?'>
+                                            Fill out our <a href="#" >online form</a>, and a representative will contact you as soon as possible to answer your questions. You can also call us at 855-511-6450.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='Do I have to be affiliated with the same religious faith as the university?'>
-                                        Absolutely not. We value diversity and welcome students of all religious backgrounds.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
-                        </MDBContainer>
-
-
-                        <Footer />
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='Do I have to be affiliated with the same religious faith as the university?'>
+                                            Absolutely not. We value diversity and welcome students of all religious backgrounds.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
+                            </MDBContainer>
+                        </div>
+                        <Footer className="mobile-footer" />
                     </div>
-                    <div className='version-Mobile'>
-                        <p className='p-3 text-center fw-bold'>"This page isn't supported in mobile view. Please try the mobile version."
-                            <br />
-                            <a href="/">Go Back</a>
-                        </p>
+                    <div className='mobileviewmsg'>
+                        <p className='fw-bold fs-5'>"To view this page, please switch to mobile view."</p>
                     </div>
                 </>
             </React.Fragment >
@@ -557,4 +547,5 @@ function AdmissionVersion4() {
     )
 }
 
-export default AdmissionVersion4
+export default AdmissionMobileVersion3
+

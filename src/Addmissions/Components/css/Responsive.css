@@ -3,9 +3,13 @@
     .nav-search {
         display: none !important;
     }
-.mobileVersion{
-    display: block;
-}
+
+
+
+    .mobileVersion {
+        display: block;
+    }
+
     .navbar-toggler i {
         color: var(--color-white);
     }
@@ -13,7 +17,7 @@
     .navbar {
         height: auto !important;
         padding-bottom: 0px !important;
-        position: sticky;
+        position: sticky !important;
         top: 0px !important;
     }
 
@@ -45,28 +49,29 @@
         padding-bottom: 15px;
     }
 
-    .tux-c-component-preview:not(.tux-c-component-preview--full) .tux-c-component-preview__wrapper,
-    .tux-c-tabs--wide .tux-c-tabs__list,
-    .tux-c-tabs.tux-c-tabs--cards .tux-c-tabs__list,
-    .tux-c-tabs.tux-c-tabs--cards .tux-c-tabs__panel,
-    .tux-l-wrap,
-    .tux-l-wrap--lg,
-    .tux-l-wrap--md,
-    .tux-l-wrap--sm {
+    .-component-preview:not(.-component-preview--full) .-component-preview__wrapper,
+    .-tabs--wide .-tabs__list,
+    .-tabs.-tabs--cards .-tabs__list,
+    .-tabs.-tabs--cards .-tabs__panel,
+    .page-l-wrap,
+    .page-l-wrap--lg,
+    .wrap-md,
+    .page-l-wrap--sm {
         margin-left: auto;
         margin-right: auto;
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    .tux-c-page-header {
+    .-page-header {
         padding-bottom: 1rem;
         padding-top: 1rem;
     }
 
-    .tux-c-page-header__heading {
+    .-page-header__heading {
         font-size: 2rem;
         font-weight: 600 !important;
+        padding: 0px;
     }
 
     .home__bg {
@@ -149,7 +154,16 @@
 
     .key-admission-section {
         background-color: #f5f3f6 !important;
+        padding: 25px;
+    }
+
+    .key-admission-section .Addmission-Program .nav-tabs {
+        overflow-x: scroll;
+        display: flex;
+        flex-wrap: nowrap;
         padding: 20px;
+        margin-bottom: 0 !important;
+        height: 230px;
     }
 
     .table>:not(caption)>*>* {
@@ -163,7 +177,7 @@
     .enrollment-div {
         width: 100%;
         color: #000;
-        padding: 2rem 10px;
+        padding: 1.5rem 15px;
     }
 
     .footer-text p {
@@ -172,15 +186,16 @@
 
     footer .text-end {
         text-align: left !important;
+        margin-top: 15px;
     }
 
-    .tux-c-pipe-list,
+    .-pipe-list,
     .socialandtext {
         flex-direction: column;
         align-items: start !important;
     }
 
-    .tux-c-pipe-list>li:not(:first-of-type):before {
+    .-pipe-list>li:not(:first-of-type):before {
         content: "";
         margin-left: 0em;
         margin-right: 0em;
@@ -194,12 +209,15 @@
     .Questions_Accordion {
         margin-top: 10px !important;
     }
-    .mobileviewmsg{
+
+    .mobileviewmsg {
         display: none;
     }
-    .EnrollmentCounselor{
+
+    .EnrollmentCounselor {
         font-size: 1.6rem;
     }
+
     .tabs-style-one .accordion-button:not(.collapsed) {
         background-color: var(--primary-color) !important;
         color: var(--color-white) !important;
@@ -207,56 +225,256 @@
         box-shadow: inset 0 calc(-1 * var(--mdb-accordion-border-width)) 0 var(--mdb-accordion-border-color);
     }
 
-    .tabs-style-one .collapse.show{
+    .tabs-style-one .collapse.show {
         background-color: var(--primary-color) !important;
     }
-        .tabs-style-one .mobileTab1-content{
+
+    .tabs-style-one .mobileTab1-content {
         background-color: var(--color-white) !important;
-        padding: 1rem ;
+        padding: 1rem;
     }
-        .tabs-style-one .accordion-body{
-        padding: 0.8rem !important;
+
+    .tabs-style-one .accordion-body {
+        padding: 0 0.8rem 0.8rem 0.8rem !important;
+        background-color: var(--primary-color) !important;
     }
-    .tabs-style-one .mobileTab1-content .tab-image .tabImage-1 {
+
+    .tabs-style-one .accordion-item {
+        background-color: #f1f1f1;
+        border-bottom: 2px solid #cdcdcd !important;
+    }
+
+    .tabs-style-one .accordion-item:last-of-type {
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    .tabs-style-one .accordion-item:first-of-type {
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+    }
+
+    .mobileTab1-content .tab-image .tabImage-1 {
         width: 100%;
         object-fit: cover;
         padding: 0rem;
     }
-        .tabs-style-one {
-            border: none;
-            background-color: var(--color-white);
-            padding-bottom: 25px !important;
-        }
 
-        .tabs-style-one .accordion-item:first-of-type .accordion-button{
-            border-radius: 0px !important
-        }
+    .tabs-style-one {
+        border: none;
+        background-color: var(--color-white);
+        padding-bottom: 25px !important;
+    }
 
-        .container{
-            padding: 0px !important;
-        }
-        .accordion-item {
-            border-left: 0px !important;
-            border-right: 0px !important;
-        }
-        .tab-imageSideContent h3 {
-            font-size: 1.5rem !important ;
-        }
-        .tab-imageSideContent p {
-            font-size: 1rem;
-            padding-right: 0rem;
-            color: var(--color-black);
-        }
-                .tab1-data {
-                    width: 100%;
-                }
-.accordion-button .tab-title-icons {
-    filter: invert(42%) sepia(93%) saturate(151%) hue-rotate(87deg) brightness(1710%) contrast(928%) !important;
+    .tabs-style-one .accordion-item:first-of-type .accordion-button {
+        border-radius: 0px !important;
+        font-size: 1.2rem !important;
+    }
+
+
+    .container {
+        padding: 0px !important;
+    }
+
+    .accordion-item {
+        border-left: 0px !important;
+        border-right: 0px !important;
+    }
+
+    .tab-imageSideContent h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .tab-imageSideContent p {
+        font-size: 0.95rem;
+        padding: 0rem 0.5rem;
+        color: var(--color-black);
+    }
+
+    .tab1-data {
+        width: 100%;
+    }
+
+    .tabs-style-one .accordion-button .tab-title-icons {
+        filter: invert(42%) sepia(93%) saturate(151%) hue-rotate(87deg) brightness(1710%) contrast(928%) !important;
+    }
+
+    .tabs-style-one .accordion-button.collapsed .tab-title-icons {
+        filter: none !important;
+    }
+
+    .tab1-data p {
+        font-size: 0.95rem;
+        padding-right: 0rem;
+        color: var(--color-black);
+    }
+
+    .tab-imageSideContent ul li,
+    .tab1-data ul li {
+        font-size: 0.95rem;
+    }
+
+    .has-large-font-size {
+        padding: 5px 0px;
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .accordion-borderless .accordion-item .accordion-button {
+        border-radius: 0px !important;
+        font-size: 1.2rem !important;
+        font-weight: 500;
+        color: var(--color-black);
+    }
+
+    .four-sectionAccordion {
+        padding: 1rem 1rem 0rem 1rem;
+    }
+
+    .four-sectionAccordion .accordion-button {
+        padding: 20px;
+        padding-bottom: 40px;
+        padding-left: 80px;
+        position: relative;
+    }
+
+    .four-sectionAccordion .accordion-button::after {
+        left: 45%;
+    }
+
+    .accordion-body {
+        padding: 15px !important;
+    }
+
+    .four-sectionAccordion .accordion {
+        margin-bottom: 25px;
+    }
+
+    .four-sectionAccordion .accordion .accordion-item,
+    .four-sectionAccordion .accordion .accordion-button {
+        border-radius: 10px !important;
+    }
+
+    .enrollment-div2 {
+        width: 100%;
+        color: #000;
+        padding: 1rem 0 0 0;
+    }
+
+    .freequentl-askedQ {
+        padding: 1rem;
+    }
+
+    .text-center.text-lg-start.mt-5 {
+        margin-top: 1rem !important;
+        padding: 1.2rem;
+    }
+
+    .mobileVersion {
+        width: 100vw;
+    }
+
+    .tab1__panels {
+        padding: 1.5rem;
+    }
+
+    .Addmission-Program .nav-tabs .nav-link.active,
+    .Addmission-Program .nav-tabs .nav-item.show .nav-link {
+        position: relative;
+        padding: 25px 35px !important;
+        transition: var(--mdb-accordion-btn-icon-transition);
+    }
+
+    .Addmission-Program .nav-tabs .nav-item .nav-link {
+        padding: 20px 60px !important;
+    }
+
+    .mobileVersion .nav-item {
+        margin-right: 25px;
+    }
+
+    .Addmission-Program .nav-tabs .nav-item:nth-child(1) {
+        margin-left: 5rem;
+    }
+
+    .application-process~.key-admission-section {
+        padding: 0px !important;
+    }
+
+    .key-admission-section .Addmission-Program .nav-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tabs-style-two {
+        border: none;
+    }
+
+    .tabs-style-two .accordion-button .tab-title-icons {
+        filter: none !important;
+    }
+
+    .tabs-style-two .accordion-borderless .accordion-item .accordion-button:not(.collapsed) {
+        background-color: #f1f1f1;
+        color: var(--color-black);
+        font-weight: 500;
+    }
+
+    .tabs-style-two .accordion-item {
+        background-color: #f1f1f1;
+        border-bottom: 2px solid #cdcdcd !important;
+        color: var(--color-black) !important;
+    }
+
+    .tabdiv-content {
+        background-color: var(--color-white);
+        /* border-top: 5px solid var(--primary-color); */
+        padding: 1rem;
+    }
+
+    /* .collapse.show {
+        border-top: 5px solid transparent;
+    } */
+
+    .border-primary-color {
+        border-top: 5px solid var(--primary-color) !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+
+    .tabs-style-two .accordion-body {
+        padding: 0 7px !important;
+    }
+
+    .tabs-style-three .accordion-item {
+        background-color: var(--color-white);
+        border-bottom: 2px solid #cdcdcd !important;
+        color: var(--color-black) !important;
+    }
+
+    .tabs-style-three .accordion-borderless .accordion-item .accordion-button:not(.collapsed) {
+        background-color: #f1f1f1;
+        color: var(--color-black);
+        font-weight: 500;
+        border-top: 8px solid var(--primary-color);
+    }
+
+    .btn-group .btn-warning {
+        color: var(--color-black) !important;
+    }
+
+    .btn-group .btn {
+        font-weight: bold;
+    }
+
+    .mobile-footerTabs {
+        position: sticky !important;
+        bottom: 0px !important;
+    }
 }
-.accordion-button.collapsed .tab-title-icons{
-    filter: none  !important;
-}
-}
+
+
+
 
 
 

@@ -15,7 +15,7 @@ import image3 from "../Components/Assets/tab3-image.jpg"
 import AR from "../Components/Assets/AR.svg"
 import cloud from "../Components/Assets/Cloud.svg"
 import Group from "../Components/Assets/Group.svg"
-function MobileTabStyle1() {
+function MobileTabStyle3() {
     const [justifyActive, setJustifyActive] = useState('tab1');
 
     const handleJustifyClick = (value) => {
@@ -28,7 +28,7 @@ function MobileTabStyle1() {
     return (
         <React.Fragment>
             <>
-                <div className="tabs-style-one">
+                <div className="tabs-style-three">
                     <MDBAccordion borderless>
                         <MDBAccordionItem collapseId={1} headerTitle={<><img src={AR} className='me-2 tab-title-icons' /> Transfer Students</>}>
                             <div className='mobileTab1-content'>
@@ -122,4 +122,4 @@ function MobileTabStyle1() {
         </React.Fragment >
     )
 }
-export default MobileTabStyle1
+export default MobileTabStyle3

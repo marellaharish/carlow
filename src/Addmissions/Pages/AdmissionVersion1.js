@@ -65,10 +65,10 @@ function AdmissionVersion1() {
 
                         <MDBContainer fluid className="p-0">
 
-                            <header className="tux-c-page-header">
-                                <div className="tux-c-page-header__wrapper tux-l-wrap--md">
+                            <header className="-page-header">
+                                <div className="-page-header__wrapper page-l-wrap--md">
 
-                                    <h1 className="tux-c-page-header__heading">
+                                    <h1 className="-page-header__heading">
                                         Carlow University Online Admissions
                                     </h1>
                                 </div>
@@ -207,7 +207,7 @@ function AdmissionVersion1() {
                                         <MDBCol size="12" md="7" sm="12" className="p-0">
                                             <div className="mx-2">
                                                 <h2 className="fw-bold AdmissionsDates-head">Key Admissions Dates</h2>
-                                                <p className="lh-base mt-4 pe-4">There are a few possible dates to keep in mind when you’re applying to Carlow. Make sure you familiarize yourself with the application deadlines and start dates so you’re prepared to apply. Keep in mind that application deadlines are specific to programs.</p>
+                                                <p className="lh-base mt-4">There are a few possible dates to keep in mind when you’re applying to Carlow. Make sure you familiarize yourself with the application deadlines and start dates so you’re prepared to apply. Keep in mind that application deadlines are specific to programs.</p>
                                                 <div className="AdmissionsDates-Table">
                                                     <MDBTable>
                                                         <MDBTableBody>

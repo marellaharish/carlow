@@ -51,10 +51,10 @@ function Versions() {
                     <a href="/addmissionsmobilev1">Addmissions Mobile Version 1</a>
                     <br />
                     <br />
-                    {/* <a href="/addmissionsv2">Addmissions Version 2</a> */}
+                    <a href="/addmissionsmobilev2">Addmissions Mobile Version 2</a>
                     <br />
                     <br />
-                    {/* <a href="/addmissionsv3">Addmissions Version 3</a> */}
+                    <a href="/addmissionsmobilev3">Addmissions Mobile Version 3</a>
                 </div>
             </div>
         </div>

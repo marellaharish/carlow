@@ -11,6 +11,8 @@ import AdmissionVersion3 from "./Addmissions/Pages/AdmissionVersion3";
 import AdmissionVersion4 from "./Addmissions/Pages/AdmissionVersion4";
 import AdmissionVersion5 from "./Addmissions/Pages/AdmissionVersion5";
 import AdmissionMobileVersion1 from "./Addmissions/Pages/AdmissionMobileVersion1";
+import AdmissionMobileVersion2 from "./Addmissions/Pages/AdmissionMobileVersion2";
+import AdmissionMobileVersion3 from "./Addmissions/Pages/AdmissionMobileVersion3";
 import Versions from './programs/Versions'
 import { StrictMode } from "react";
 import { version } from "react-dom";
@@ -63,11 +65,17 @@ const router = createBrowserRouter([
         path: "addmissionsv4",
         element: <AdmissionVersion4 />
       }, {
-        path: "addmissionsv5d",
+        path: "addmissionsv5",
         element: <AdmissionVersion5 />
       }, {
         path: "addmissionsmobilev1",
         element: <AdmissionMobileVersion1 />
+      }, {
+        path: "addmissionsmobilev2",
+        element: <AdmissionMobileVersion2 />
+      }, {
+        path: "addmissionsmobilev3",
+        element: <AdmissionMobileVersion3 />
       }
 
     ],

@@ -3,11 +3,12 @@ import "../Components/css/Home.css"
 import "../Components/css/Responsive.css"
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
-import { MDBCol, MDBContainer, MDBInput, MDBRow, MDBCheckbox, MDBBtn } from "mdb-react-ui-kit"
+import { MDBCol, MDBContainer, MDBInput, MDBRow, MDBCheckbox, MDBBtn, MDBBtnGroup } from "mdb-react-ui-kit"
 import MobileTabStyle1 from '../Views/MobileTabStyle1';
 import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import { MDBAccordion, MDBAccordionItem, MDBIcon } from 'mdb-react-ui-kit';
 import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from 'mdb-react-ui-kit';
+import tabIcon1 from '../Components/Assets/Mediamodifier-Design.svg'
 function AdmissionMobileVersion1() {
 
 
@@ -64,10 +65,9 @@ function AdmissionMobileVersion1() {
 
                         <MDBContainer fluid className="p-0">
 
-                            <header className="tux-c-page-header">
-                                <div className="tux-c-page-header__wrapper tux-l-wrap--md">
-
-                                    <h1 className="tux-c-page-header__heading">
+                            <header className="-page-header">
+                                <div className="-page-header__wrapper tux-l-wrap--md">
+                                    <h1 className="-page-header__heading">
                                         Carlow University Online Admissions
                                     </h1>
                                 </div>
@@ -206,7 +206,7 @@ function AdmissionMobileVersion1() {
                                         <MDBCol size="12" md="7" sm="12" className="p-0">
                                             <div className="mx-2">
                                                 <h2 className="fw-bold AdmissionsDates-head">Key Admissions Dates</h2>
-                                                <p className="lh-base mt-4 pe-4">There are a few possible dates to keep in mind when you’re applying to Carlow. Make sure you familiarize yourself with the application deadlines and start dates so you’re prepared to apply. Keep in mind that application deadlines are specific to programs.</p>
+                                                <p className="lh-base mt-4">There are a few possible dates to keep in mind when you’re applying to Carlow. Make sure you familiarize yourself with the application deadlines and start dates so you’re prepared to apply. Keep in mind that application deadlines are specific to programs.</p>
                                                 <div className="AdmissionsDates-Table">
                                                     <MDBTable>
                                                         <MDBTableBody>
@@ -265,46 +265,39 @@ function AdmissionMobileVersion1() {
                         <div className="application-process p-1">
                             <MDBContainer>
                                 <div className="four-sectionAccordion">
-                                    <h2 className="EnrollmentCounselor">How to Apply</h2>
+                                    <h2 className="EnrollmentCounselor white">How to Apply</h2>
 
-                                    <MDBRow>
-                                        <MDBCol>
-                                            <MDBAccordion alwaysOpen  >
-                                                <div className="accordion-header logo-image"><MDBIcon fas icon="file-signature" className="ms-2" /></div>
-                                                <MDBAccordionItem collapseId={1} headerTitle='1. Fill out the online application.'>
-                                                    <a href="#">Create an account in the Carlow online system</a> and complete the form.
-                                                </MDBAccordionItem>
-                                            </MDBAccordion>
-                                        </MDBCol>
-                                        <MDBCol>
-                                            <MDBAccordion alwaysOpen  >
-                                                <div className="accordion-header logo-image"><MDBIcon fas icon="bars" /></div>
-                                                <MDBAccordionItem collapseId={1} headerTitle='2. Check any program specific-requirements.'>
-                                                    Your program might require additional materials. Make sure you review the program page and call 855-511-6450 if you have any questions.
-                                                </MDBAccordionItem>
-                                            </MDBAccordion>
-                                        </MDBCol>
-                                    </MDBRow>
-                                    <MDBRow>
-                                        <MDBCol>
-                                            <MDBAccordion alwaysOpen>
-                                                <div className="accordion-header logo-image"><MDBIcon far icon="user-circle" /></div>
-                                                <MDBAccordionItem collapseId={1} headerTitle='3. Request official transcripts.'>
-                                                    All online applications require proof of transcripts. so you will need to request your official transcripts from the institutions you have attended.
-                                                </MDBAccordionItem>
-                                            </MDBAccordion>
-                                        </MDBCol>
-                                        <MDBCol>
-                                            <MDBAccordion alwaysOpen>
-                                                <div className="accordion-header logo-image"><MDBIcon far icon="envelope" /></div>
-                                                <MDBAccordionItem collapseId={1} headerTitle="4. Monitor your email. We ll be in touch!">
-                                                    Check for updates and news about your application.
-                                                </MDBAccordionItem>
-                                            </MDBAccordion>
-                                        </MDBCol>
-                                    </MDBRow>
+
+                                    <MDBAccordion alwaysOpen  >
+                                        <div className="accordion-header logo-image"><MDBIcon fas icon="file-signature" className="ms-2" /></div>
+                                        <MDBAccordionItem collapseId={1} headerTitle='1. Fill out the online application.'>
+                                            <a href="#">Create an account in the Carlow online system</a> and complete the form.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+
+                                    <MDBAccordion alwaysOpen  >
+                                        <div className="accordion-header logo-image"><MDBIcon fas icon="bars" /></div>
+                                        <MDBAccordionItem collapseId={1} headerTitle='2. Check any program specific-requirements.'>
+                                            Your program might require additional materials. Make sure you review the program page and call 855-511-6450 if you have any questions.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+
+                                    <MDBAccordion alwaysOpen>
+                                        <div className="accordion-header logo-image"><MDBIcon far icon="user-circle" /></div>
+                                        <MDBAccordionItem collapseId={1} headerTitle='3. Request official transcripts.'>
+                                            All online applications require proof of transcripts. so you will need to request your official transcripts from the institutions you have attended.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+
+                                    <MDBAccordion alwaysOpen>
+                                        <div className="accordion-header logo-image"><MDBIcon far icon="envelope" /></div>
+                                        <MDBAccordionItem collapseId={1} headerTitle="4. Monitor your email. We ll be in touch!">
+                                            Check for updates and news about your application.
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+
                                 </div>
-                                <div className="d-flex mt-5">
+                                <div className="d-flex pb-3">
                                     <MDBBtn className="m-auto" size="lg">START YOUR APPLICATION</MDBBtn>
                                 </div>
                             </MDBContainer>
@@ -321,7 +314,7 @@ function AdmissionMobileVersion1() {
                         <div className="key-admission-section">
                             <MDBContainer>
                                 <div className="Addmission-Program">
-                                    <MDBTabs fill className='mb-3'>
+                                    <MDBTabs fill>
                                         <MDBTabsItem>
                                             <MDBTabsLink onClick={() => handleFillClick('tab1')} active={fillActive === 'tab1'}>
                                                 <div className="logo-image"><MDBIcon far icon="user-circle" /></div>
@@ -416,133 +409,147 @@ function AdmissionMobileVersion1() {
                             </MDBTabsContent>
                         </MDBContainer>
 
-
-                        <MDBContainer >
-                            <div className="d-flex justify-content-center ">
-                                <div className="enrollment-div2 text-center">
-                                    <h2 className="EnrollmentCounselor2">Frequently Asked Questions</h2>
-                                    <p className="has-large-font-size mt-4">Explore our frequently asked questions for in-depth answers. If you don’t find what you’re looking for, <a href="#"> reach out to us. </a></p>
+                        <div className='freequentl-askedQ'>
+                            <MDBContainer >
+                                <div className="d-flex justify-content-center ">
+                                    <div className="enrollment-div2 text-center">
+                                        <h2 className="EnrollmentCounselor2">Frequently Asked Questions</h2>
+                                        <p className="has-large-font-size mt-4">Explore our frequently asked questions for in-depth answers. If you don’t find what you’re looking for, <a href="#"> reach out to us. </a></p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div className="Questions_Accordion mt-0">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='Do you accept transfer credits?'>
-                                        Yes. Carlow has a generous transfer credit policy. Guidelines differ based on your program of choice. Request more information today.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion mt-0">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='Do you accept transfer credits?'>
+                                            Yes. Carlow has a generous transfer credit policy. Guidelines differ based on your program of choice. Request more information today.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='Do you provide credits for work experience?'>
-                                        All of our programs have transfer credit policies and some offer advanced standing options. Explore your <a href="#"> program of interest</a> or <a href="#"> reach out</a> for specific information.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='Do you provide credits for work experience?'>
+                                            All of our programs have transfer credit policies and some offer advanced standing options. Explore your <a href="#"> program of interest</a> or <a href="#"> reach out</a> for specific information.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='How do I apply?'>
-                                        All programs require an <a href="#"> online application.</a> From there, the process depends on your program of interest.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='How do I apply?'>
+                                            All programs require an <a href="#"> online application.</a> From there, the process depends on your program of interest.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='If I am not accepted, what are my options?'>
-                                        The <a href="#"> Mercy principles </a>we employ on campus extend to our admissions process. If you have special circumstances, reach out to us to find out what your options are at 855-511-6450.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='If I am not accepted, what are my options?'>
+                                            The <a href="#"> Mercy principles </a>we employ on campus extend to our admissions process. If you have special circumstances, reach out to us to find out what your options are at 855-511-6450.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='What is the admissions process like?'>
-                                        The admissions process varies based on your program of choice, and we strive to help you through the entire process with one-on-one attention. Find out more about <a> applying to Carlow.</a>
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='What is the admissions process like?'>
+                                            The admissions process varies based on your program of choice, and we strive to help you through the entire process with one-on-one attention. Find out more about <a> applying to Carlow.</a>
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='What is the first step in the application process?'>
-                                        Each program requires an <a href="#"> online application.</a> Find out more about <a> applying to Carlow.</a>
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='What is the first step in the application process?'>
+                                            Each program requires an <a href="#"> online application.</a> Find out more about <a> applying to Carlow.</a>
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='What resources does the school provide for students with disabilities?'>
-                                        If you are considering attending Carlow University and have unique needs, we are ready to help. Some examples of accommodations we offer include enlarged print, audio textbooks, extended testing time and more. Please <a href="#"> contact us </a>with your specific needs.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='What resources does the school provide for students with disabilities?'>
+                                            If you are considering attending Carlow University and have unique needs, we are ready to help. Some examples of accommodations we offer include enlarged print, audio textbooks, extended testing time and more. Please <a href="#"> contact us </a>with your specific needs.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='Who can I speak with about specific admissions questions?'>
-                                        Fill out our <a href="#" >online form</a>, and a representative will contact you as soon as possible to answer your questions. You can also call us at 855-511-6450.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='Who can I speak with about specific admissions questions?'>
+                                            Fill out our <a href="#" >online form</a>, and a representative will contact you as soon as possible to answer your questions. You can also call us at 855-511-6450.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
 
-                            <div className="Questions_Accordion">
-                                <MDBAccordion alwaysOpen>
-                                    <MDBAccordionItem collapseId={1} headerTitle='Do I have to be affiliated with the same religious faith as the university?'>
-                                        Absolutely not. We value diversity and welcome students of all religious backgrounds.
-                                        <div className="d-flex align-items-center feedback-buttons">
-                                            <p className="m-0 me-4">Was this question helpful?</p>
-                                            <MDBBtn>Yes</MDBBtn>
-                                            <MDBBtn className="ms-2">No</MDBBtn>
-                                        </div>
-                                    </MDBAccordionItem>
-                                </MDBAccordion>
-                            </div>
-                        </MDBContainer>
-                        <Footer />
+                                <div className="Questions_Accordion">
+                                    <MDBAccordion alwaysOpen>
+                                        <MDBAccordionItem collapseId={1} headerTitle='Do I have to be affiliated with the same religious faith as the university?'>
+                                            Absolutely not. We value diversity and welcome students of all religious backgrounds.
+                                            <div className="d-flex align-items-center feedback-buttons">
+                                                <p className="m-0 me-4">Was this question helpful?</p>
+                                                <MDBBtn>Yes</MDBBtn>
+                                                <MDBBtn className="ms-2">No</MDBBtn>
+                                            </div>
+                                        </MDBAccordionItem>
+                                    </MDBAccordion>
+                                </div>
+                            </MDBContainer>
+                        </div>
+                        <Footer className="mobile-footer" />
+                        <div className='mobile-footerTabs'>
+                            <MDBBtnGroup className='w-100'>
+                                <MDBBtn color='light'>
+                                    Apply
+                                </MDBBtn>
+                                <MDBBtn color='warning'>
+                                    Request Info
+                                </MDBBtn>
+                                <MDBBtn color='light'>
+                                    Chat
+                                </MDBBtn>
+                            </MDBBtnGroup>
+                        </div>
                     </div>
                     <div className='mobileviewmsg'>
                         <p className='fw-bold fs-5'>"To view this page, please switch to mobile view."</p>
