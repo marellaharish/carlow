@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 
-/* @font-face {
-    font-family: 'QuietSans';
-    src: url("../Fonts/Fontspring-DEMO-quietsans-light.otf");
-} */
+body {
+    font-family: Helvetica, sans-serif !important;
+}
 
 :root {
     --page-wrap--md: 1144px;
@@ -295,7 +294,7 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: "QuietSans";
+    font-family: Helvetica, sans-serif;
     font-weight: 600;
 
 }
@@ -361,8 +360,8 @@ h6,
     color: var(--color-white) !important;
     margin-top: 40px;
     line-height: 24px !important;
-    font-size: 18px;
-    font-family: 'QuietSans';
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
 }
 
 .hero-b__content2 {
@@ -390,7 +389,7 @@ h6,
     color: var(--color-white) !important;
     line-height: 24px !important;
     font-size: 18px;
-    font-family: 'QuietSans';
+    font-family: Helvetica, sans-serif;
 }
 
 .home__register form label {
@@ -482,14 +481,13 @@ h6,
 }
 
 .personal-admission {
-    /* font-family: "QuietSans", Helvetica, sans-serif; */
     font-weight: 400;
     color: #000;
     padding: 0 7rem;
+    font-family: Helvetica, sans-serif;
 }
 
 .personal-admission-txt {
-    /* font-family: "QuietSans", Helvetica, sans-serif; */
     font-weight: 400;
     color: #000;
     padding: 0 7rem;
@@ -659,7 +657,7 @@ a {
 .four-sectionAccordion .accordion-button {
     font-size: 1.15rem !important;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: var(--color-black);
 }
 
