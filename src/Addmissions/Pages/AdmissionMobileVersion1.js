@@ -9,6 +9,14 @@ import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import { MDBAccordion, MDBAccordionItem, MDBIcon } from 'mdb-react-ui-kit';
 import { MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane } from 'mdb-react-ui-kit';
 import tabIcon1 from '../Components/Assets/Mediamodifier-Design.svg'
+import OnlineApp from '../Components/Assets/onlineApplication.png';
+import Menu from '../Components/Assets/menu.png';
+import User from '../Components/Assets/user.png';
+import Mail from '../Components/Assets/Mail.png';
+import Certificate from '../Components/Assets/certificate.png';
+import Master from '../Components/Assets/Masters.png';
+import Bachelor from '../Components/Assets/Bachelor.png';
+import Doctorate from '../Components/Assets/Docorate.png';
 function AdmissionMobileVersion1() {
 
 
@@ -269,28 +277,28 @@ function AdmissionMobileVersion1() {
 
 
                                     <MDBAccordion alwaysOpen  >
-                                        <div className="accordion-header logo-image"><MDBIcon fas icon="file-signature" className="ms-2" /></div>
+                                        <div className="accordion-header logo-image"> <img src={OnlineApp} className='w-50 ms-2' /></div>
                                         <MDBAccordionItem collapseId={1} headerTitle='1. Fill out the online application.'>
                                             <a href="#">Create an account in the Carlow online system</a> and complete the form.
                                         </MDBAccordionItem>
                                     </MDBAccordion>
 
                                     <MDBAccordion alwaysOpen  >
-                                        <div className="accordion-header logo-image"><MDBIcon fas icon="bars" /></div>
+                                        <div className="accordion-header logo-image"><img src={Menu} className='w-50' /></div>
                                         <MDBAccordionItem collapseId={1} headerTitle='2. Check any program specific-requirements.'>
                                             Your program might require additional materials. Make sure you review the program page and call 855-511-6450 if you have any questions.
                                         </MDBAccordionItem>
                                     </MDBAccordion>
 
                                     <MDBAccordion alwaysOpen>
-                                        <div className="accordion-header logo-image"><MDBIcon far icon="user-circle" /></div>
+                                        <div className="accordion-header logo-image"><img src={User} className='w-50' /></div>
                                         <MDBAccordionItem collapseId={1} headerTitle='3. Request official transcripts.'>
                                             All online applications require proof of transcripts. so you will need to request your official transcripts from the institutions you have attended.
                                         </MDBAccordionItem>
                                     </MDBAccordion>
 
                                     <MDBAccordion alwaysOpen>
-                                        <div className="accordion-header logo-image"><MDBIcon far icon="envelope" /></div>
+                                        <div className="accordion-header logo-image"><img src={Mail} className='w-50' /></div>
                                         <MDBAccordionItem collapseId={1} headerTitle="4. Monitor your email. We ll be in touch!">
                                             Check for updates and news about your application.
                                         </MDBAccordionItem>
@@ -317,25 +325,25 @@ function AdmissionMobileVersion1() {
                                     <MDBTabs fill>
                                         <MDBTabsItem>
                                             <MDBTabsLink onClick={() => handleFillClick('tab1')} active={fillActive === 'tab1'}>
-                                                <div className="logo-image"><MDBIcon far icon="user-circle" /></div>
+                                                <div className="logo-image"><img src={Certificate} className='w-50' /></div>
                                                 <h6 className="mt-1">Certificate</h6>
                                             </MDBTabsLink>
                                         </MDBTabsItem>
                                         <MDBTabsItem>
                                             <MDBTabsLink onClick={() => handleFillClick('tab2')} active={fillActive === 'tab2'}>
-                                                <div className="logo-image"><MDBIcon fas icon="graduation-cap" /></div>
+                                                <div className="logo-image"><img src={Master} className='w-50' /></div>
                                                 <h6 className="mt-1">Master’s</h6>
                                             </MDBTabsLink>
                                         </MDBTabsItem>
                                         <MDBTabsItem>
                                             <MDBTabsLink onClick={() => handleFillClick('tab3')} active={fillActive === 'tab3'}>
-                                                <div className="logo-image"><MDBIcon fab icon="black-tie" /></div>
+                                                <div className="logo-image"><img src={Bachelor} className='w-50' /></div>
                                                 <h6 className="mt-1">Bachelor’s</h6>
                                             </MDBTabsLink>
                                         </MDBTabsItem>
                                         <MDBTabsItem>
                                             <MDBTabsLink onClick={() => handleFillClick('tab4')} active={fillActive === 'tab4'}>
-                                                <div className="logo-image"><MDBIcon fas icon="user-graduate" /></div>
+                                                <div className="logo-image"><img src={Doctorate} className='w-50' /></div>
                                                 <h6 className="mt-1">Doctorate</h6>
                                             </MDBTabsLink>
                                         </MDBTabsItem>

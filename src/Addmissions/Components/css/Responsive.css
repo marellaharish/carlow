@@ -71,7 +71,7 @@
     .-page-header__heading {
         font-size: 2rem;
         font-weight: 600 !important;
-        padding: 0px;
+        padding: 0px 10px;
     }
 
     .home__bg {

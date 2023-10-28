@@ -763,6 +763,7 @@ a {
     font-size: 2rem;
 }
 
+
 .Addmission-Program .nav-tabs .nav-link.active,
 .Addmission-Program .nav-tabs .nav-item.show .nav-link {
     color: var(--mdb-nav-tabs-link-active-color);
@@ -1218,4 +1219,16 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.black {
+    color: var(--color-black) !important;
+}
+
+.four-sectionAccordion .logo-image img {
+    filter: invert(42%) sepia(93%) saturate(151%) hue-rotate(87deg) brightness(1710%) contrast(928%) !important;
+}
+
+.Addmission-Program .nav-tabs .nav-item .nav-link .logo-image img {
+    filter: invert(42%) sepia(93%) saturate(151%) hue-rotate(87deg) brightness(1710%) contrast(928%) !important;
 }
